@@ -63,7 +63,7 @@ shiny::shinyApp(
     # argonTable
     output$argonTable <- renderUI({
       
-      wrap <- if (input$cardWrap == "Enable") TRUE else FALSE
+      wrap <- if (input$cardWrap == "Disable") TRUE else FALSE
       
       argonTable(
         cardWrap = wrap,
@@ -76,8 +76,8 @@ shiny::shinyApp(
           ""
         ),
         argonTableItems(
-          argonTableItem("Argon Design System"),
-          argonTableItem(dataCell = TRUE, "$2,500 USD"),
+          argonTableItem("Projeto Casas Bahia"),
+          argonTableItem(dataCell = TRUE, "$25.500 USD"),
           argonTableItem(
             dataCell = TRUE, 
             argonBadge(
@@ -88,7 +88,7 @@ shiny::shinyApp(
           argonTableItem(
             argonAvatar(
               size = "sm",
-              src = "https://image.flaticon.com/icons/svg/219/219976.svg"
+              src = "https://randomuser.me/api/portraits/men/37.jpg"
             )
           ),
           argonTableItem(
@@ -97,11 +97,27 @@ shiny::shinyApp(
           ),
           argonTableItem(
             argonButton(
-              name = "Click me!",
-              status = "warning",
-              icon = "atom",
-              size = "sm"
-            )
+              name = "Detalhes do Projeto",
+              status = "danger",
+              icon = argonIcon("atom"),
+              size = "sm",
+              toggle_modal = TRUE,
+              modal_id = "modal1"
+            ),
+            argonModal(
+              id = "modal1",
+              title = "Projeto Casas Bahia",
+              status = "danger",
+              gradient = TRUE,
+              br(),
+              "Budget: 25.000,00",
+              br(),
+              "Link: www.meutem.com.br",
+              br(),
+              "Metodo: API",
+              br(),
+              "Qualquer coisa: Qualquercoisa"
+            ),
           )
         )
       )

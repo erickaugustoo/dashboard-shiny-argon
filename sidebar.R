@@ -34,38 +34,38 @@ argonSidebar <- argonDashSidebar(
     ),
     argonSidebarItem(
       tabName = "tables",
-      icon = argonIcon(name = "tv-1", color = "green"),
-      "Tables"
+      icon = argonIcon(name = "planet", color = "green"),
+      "Projetos"
     ),
     argonSidebarItem(
       tabName = "tabs",
       icon = argonIcon(name = "planet", color = "warning"),
-      "Tabs"
+      "Usuarios"
     ),
     argonSidebarItem(
       tabName = "alerts",
       icon = argonIcon(name = "bullet-list-67", color = "danger"),
-      "Alerts"
+      "Gerenciamento"
     ),
     argonSidebarItem(
       tabName = "medias",
       icon = argonIcon(name = "circle-08", color = "success"),
-      "Medias"
+      "Medias?"
     ),
     argonSidebarItem(
       tabName = "items",
       icon = argonIcon(name = "ui-04", color = "pink"),
-      "Other items"
+      "Outros Itens"
     ),
     argonSidebarItem(
       tabName = "effects",
       icon = argonIcon(name = "atom", color = "black"),
-      "CSS effects"
+      "POC"
     ),
     argonSidebarItem(
       tabName = "sections",
       icon = argonIcon(name = "credit-card", color = "grey"),
-      "Sections"
+      "Um botao"
     ),
     color = "warning",),
   argonSidebarDivider(),

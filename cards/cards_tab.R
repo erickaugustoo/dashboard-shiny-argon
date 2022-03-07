@@ -2,7 +2,7 @@ cards_tab <- argonTabItem(
   tabName = "cards",
   
   # classic cards
-  argonH1("Classic Cards", display = 4),
+  argonH1("Datalake doidao", display = 4),
   argonRow(
     argonCard(
       width = 12,
@@ -66,7 +66,7 @@ cards_tab <- argonTabItem(
   argonRow(
     argonInfoCard(
       value = "1048 Clinicas", 
-      title = "Rede credenciadas", 
+      title = "Rede clinicas", 
       stat = 13.48, 
       stat_icon = icon("arrow-up"),
       description = "Desde ultimo mes", 
@@ -113,7 +113,7 @@ cards_tab <- argonTabItem(
   argonH1("Programadores", display = 4),
   argonRow(
     argonColumn(
-      width = 3,
+      width = 4,
       argonUser(
         title = "Erick Luiz",
         subtitle = "Software Developer || R Programmer",
@@ -121,7 +121,7 @@ cards_tab <- argonTabItem(
       )
     ),
     argonColumn(
-      width = 3,
+      width = 4,
       argonUser(
         title = "Lucas Perazzo",
         subtitle = "Tech Lead || R Programmer",
@@ -129,19 +129,11 @@ cards_tab <- argonTabItem(
       )
     ),
     argonColumn(
-      width = 3,
+      width = 4,
       argonUser(
         title = "Marcos Marimoto",
         subtitle = "R Programmer Senior",
         src = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/43563f53-c409-4769-a2a9-f5893b6df553/d8w4e87-08c2b115-7eef-47e6-87d3-1f14e5753bad.png"
-      )
-    ),
-    argonColumn(
-      width = 3,
-      argonUser(
-        title = "Cara Aleatorio",
-        subtitle = "Nao consigo tirar",
-        src = "https://cdn.discordapp.com/attachments/938486846873296957/940389862434025512/avatar.png"
       )
     )
   ),
